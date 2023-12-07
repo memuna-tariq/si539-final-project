@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Design Inspiration: https://www.behance.net/gallery/183795949/UIUX-Portfolio-Web-Mobile-Design?tracking_source=search_projects|mobile+portfolio&l=25 -->
+    <title>About Page</title>
+  </head>
+  <body id="body">
+    <header>
+      <a href="#main" class="skip">Skip to Main Content</a>
+      <div class="nav">
+        <nav>
+          <a href="javascript:void(0)" id="closeButton">&times;</a>
+          <!-- The href attribute is set to javascript:void(0). This is a common technique used to prevent the default action of the <a> tag (which is to navigate to a new URL). The javascript:void(0) value essentially means "execute the JavaScript void operator with argument 0". The void operator evaluates the given expression and then returns undefined. In this case, it does nothing (evaluates 0), which effectively cancels the default navigation action. -->
+          <!-- The content of the <a> tag is &times;, which is an HTML entity that represents a multiplication sign (×). This is often used to symbolically represent a "close" or "exit" button in a user interface. When rendered in the browser, it will appear as a '×' symbol. -->
+          <ul>
+            <li><a href="index.html" class="navLink">Home</a></li>
+            <li><a href="#body" class="active">About</a></li>
+            <li><a href="index.html" class="navLink">Projects</a></li>
+            <li>
+              <a
+                target="_blank"
+                href="https://drive.google.com/file/d/148RJE6BUfNKcUa1aL7D5Ap6fvGuG305Z/view?usp=sharing"
+                >Resume</a
+              >
+            </li>
+            <li><a href="#contact" class="navLink">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div id="header_div">
+        <a href="index.html" class="header">
+          <span>Memuna</span>
+          <span>Tariq</span>
+        </a>
+        <button id="hamburgerButton">
+          <img id="hamburger" src="images/hamburger.png" alt="Hamburger Icon" />
+        </button>
+      </div>
+    </header>
+    <main id="main">
+      <h1>
+        <span class="bold">About Me</span>
+      </h1>
+      <h2>Hello/Salam!</h2>
+      <div class="about-section-container">
+        <p class="about-section">
+          I'm Memuna an aspiring Human-Computer Interaction (HCI) researcher and
+          User Experience (UX) designer from Lahore, Pakistan. Currently, I am a
+          Master of Science in Information (MSI) student at the University of
+          Michigan in Ann Arbor. I completed my undergraduate studies with a
+          distinction in Computer Science and Psychology at the Lahore
+          University of Management Sciences (LUMS). My aim is to develop
+          equitable and inclusive, education and health technologies for
+          marginalized and underrepresented communities around the world,
+          especially in the Global South, where I hail from. <br />
+          <!-- <br />
+          Alongside my academic pursuits, I am deeply passionate about edible
+          art and cake decorating and often use it to channel my aesthetic
+          proclivity. Scroll down below to see some of my baked creations! -->
+        </p>
+        <div class="about-img-container">
+          <img
+            src="images/about_profile.jpeg"
+            alt="A picture of me wearing an off-white jacket"
+          />
+        </div>
+      </div>
+      <!-- <iframe
+        src="https://d0ba3d28c88349e9bac5d2620870c860.elf.site/"
+        width="100%"
+        height="1000"
+        frameborder="0"
+      ></iframe> -->
+
+      <!-- <p class="spotify">
+        To get to know me further, check out my most listened to songs on
+        Spotify below! "Sukoon" is a personal favorite of mine!
+      </p>
+      <iframe
+        class="spotify"
+        title="Spotify Embed for Hassan and Roshaan"
+        style="border-radius: 12px"
+        src="https://open.spotify.com/embed/artist/5hjVqhHwLYWW9ZIxuILJF7?utm_source=generator"
+        width="70%"
+        height="352"
+        frameborder="0"
+        allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy"
+      ></iframe> -->
+
+      <div class="contact-form-container">
+        <h3 id="contact">Contact Me</h3>
+        <form action="https://formspree.io/f/mgejrkjg" method="POST">
+          <fieldset>
+            <legend>Let's Connect!</legend>
+
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                placeholder="Your Name"
+                id="name"
+                name="full_name"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="xyz@gmail.com"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="msg">Leave a Message</label>
+              <textarea
+                id="msg"
+                name="message"
+                rows="4"
+                placeholder="Type your message here..."
+              ></textarea>
+            </div>
+
+            <button type="submit" id="submit">Submit</button>
+          </fieldset>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; Memuna Tariq 2023</p>
+    </footer>
+    <script src="js/jsAbout.js"></script>
+    <script
+      src="https://static.elfsight.com/platform/platform.js"
+      data-use-service-core
+      defer
+    ></script>
+  </body>
+</html>
